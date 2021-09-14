@@ -7,7 +7,30 @@ body {
     text-rendering: optimizeLegibility;
     border-top: 6px #67b05b solid !important;
     font-size: 16px;
+    --red: #c96565;
+	--yellow: #c9b065;
+	--lime: #8cba5d;
+	--green: #65b87a;
+	--cyan: #60b5a8;
+	--blue: #658fc9;
+	--purple: #8665c9;
+	--pink: #c965c1;
+	--accent: var(--blue);
 }
+
+*::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #1d1e28;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #67b05b;
+    border-radius: 10px;
+    border: 3px solid #1d1e28;
+  }
 
 .nav-link {
      font-size: 14px !important;
@@ -73,6 +96,7 @@ body {
     font-size: 16px !important;
     font-family: 'Lato', sans-serif;
 }
+
 
 
 .features {
@@ -205,3 +229,23 @@ color: rgba(255, 255, 255, 0.46) !important
     text-align: center !important;
     color: #a2a8bd !important
 }
+
+.gradient {
+	background: linear-gradient(
+		to right,
+		var(--red),
+		var(--yellow),
+		var(--lime),
+		var(--green),
+		var(--cyan),
+		var(--blue),
+		var(--purple),
+		var(--pink)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 5s ease infinite;
+	background-size: 400% 100%;
+}
+
