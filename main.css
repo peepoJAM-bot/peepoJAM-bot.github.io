@@ -241,11 +241,11 @@ color: rgba(255, 255, 255, 0.46) !important
 		var(--blue),
 		var(--purple),
 		var(--pink)
-	);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	animation: rainbow 5s ease infinite;
-	background-size: 400% 100%;
+	) !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	color: transparent !important;
+	animation: rainbow 5s ease infinite !important;
+	background-size: 400% 100% !important;
 }
 
