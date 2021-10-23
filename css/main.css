@@ -1,3 +1,12 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+  
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif !important;
     background-color: #1D1E28;
@@ -17,20 +26,6 @@ body {
 	--pink: #c965c1;
 	--accent: var(--blue);
 }
-
-*::-webkit-scrollbar {
-    width: 15px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #1d1e28;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #67b05b;
-    border-radius: 10px;
-    border: 3px solid #1d1e28;
-  }
 
 .nav-link {
      font-size: 14px !important;
